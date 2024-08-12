@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiGame</title>
+  <style>
+    body
+    {
+        background-color: antiquewhite;
+        padding: 0px;
+        margin: 0;
+        box-sizing: border-box;
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url(./Assests/Gallery/back.png);
+         background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    
+       
+        
+    }
+    .main
+    {
+        width:830px;
+        height: 300px;
+        background-color: rgba(6, 133, 184, 0.911);
+         border-radius: 50%;
+         color:bisque;
+         display: grid;
+         justify-content: center;
+         align-items: center;
+        position: relative;
+        left:280px;
+        top:200px;
+        font-size: 38px;
+        
+
+    }
+    input
+    {
+       height: 30px;
+    }
+    button
+    {
+        position: relative;
+        left: 130px;
+        border-radius: 50%;
+        width: 120px;
+        height: 50px;
+        font-size: 20px;
+        background-color: rgb(73, 167, 73);
+        color: azure;
+        cursor: pointer;
+        border: 0px;
+    }
+    button:hover
+    {
+        background-color: rgb(36, 65, 7);
+    }
+    span{
+        font-size: 85px;
+        border-radius: 20%;
+        position: relative;
+        left:50px;
+        top:100px;
+        background-color: rgba(6, 133, 184, 0.911);
+        color:bisque;
+        
+
+    }
+  </style>
+</head>
+<body>
+    <header>
+       <span >😍😊 MATCH THE EMOJIS😎😉</span> 
+    </header>
+    <div class="main">
+        <br>
+       ENTER YOUR NAME  <input type="text" id="name"> 
+      <button onclick="page()">START</button>
+    </div>
+   
+    <script>
+        function page()
+        {
+            let inputE = document.getElementById("name");
+            let name = inputE.value;
+            console.log(name);
+            if(name == "")
+            {
+               window.alert("Enter your name");
+               window.location = "index.html"; 
+               
+            }
+            else
+            {
+                window.location = "emoji.html"; 
+            }
+           
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiGame</title>
+    <link rel="stylesheet" href="./Assests/css/styles.css">
+    <script src="./Assests/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+     function home()
+   {
+      const home = document.getElementById("home");
+      window.location = "index.html";
+    } 
+    function restart()
+    {
+        window.location = "emoji.html";
+    }
+    
+   
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="match"> 
+
+           <div class="box"><br>
+              <span ><b>MATCHES</b></span> 
+             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><span id="matche"></span></b>
+           </div> 
+           <div class="box"><br>
+            &nbsp;<span ><b>ATTEMPTS</b></span> 
+             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><span id="turns"></span></b>
+        </div>
+          
+       </div>
+        <div class="board" id="board">
+         <div class="c1" > <p></p></div>
+         <div class="c2" ><p></p></div>
+         <div class="c3" ><p></p></div>
+         <div class="c4" ><p></p></div>
+         <div class="c5" ><p></p></div>
+         <div class="c6" ><p></p></div>
+         <div class="c7" ><p></p></div>
+         <div class="c8"><p></p></div>
+         <div class="c9"><p></p></div>
+         <div class="c10"><p></p></div>
+         <div class="c11"><p></p></div>
+         <div class="c12"><p></p></div>
+         <div class="c13"><p></p></div>
+         <div class="c14"><p></p></div>
+         <div class="c15"><p></p></div>
+         <div class="c16"><p></p></div>
+         <div class="c17"><p></p></div>
+         <div class="c18"><p></p></div>
+         <div class="c19"><p></p></div>
+         <div class="c20"><p></p></div>
+        </div>
+        <div class="turns">
+            <div class="home" id="home" onclick="home()">
+       
+            <i class="fa fa-home " ></i>                    
+
+             </div>
+             <div id="music-toggle" class="music-icon" onclick="toggleMusic()">
+                <span class="icon music-on">🔊</span> <!-- Music on icon -->
+                <span class="icon music-off hidden">🔇</span> <!-- Music off icon -->
+            </div>
+           
+            <audio id="background-music" loop>
+                <source src="./Assests/audio/audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+               
+                
+
+        <div class="box1" style="width: 129px;" onclick="restart()">
+            RESTART
+           </div> 
+          
+        </div>
+        </div>
+    </div>
+</body>
+</html>
